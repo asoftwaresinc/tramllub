@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.BullMart.StockTips" version="2.1.0">
-  <name>BullMart - MCX Live Stock Tips</name>
+  <name>BullMart</name>
   <description>Get MCX Live Stock Tips </description>
   <author href="http://bullmart.co" email="info@bullmart.co">Bullmart Team</author>
   <content src="index.html"/>

@@ -1,0 +1,34 @@
+<div ng-controller="TracksheetsController"> 
+<div class="PageHeading">Tracksheets  
+	<select  ng-model="TracksheetSearch.Package"  ng-init="TracksheetSearch.Package='MCXCommodity'" ng-change="TracksheetF()" style="padding: 3px;
+    width: 50%;
+    float: right;">
+<option value="StockCash">Cash</option>
+<option value="StockFuture">Future</option>
+<option value="StockOption">Option</option>
+<option value="Positional">Positional</option>
+<option value="StockCashBtst">BTST</option>
+<option value="NiftyFuture">Nifty</option>
+<option value="Bullion">Bullion</option>
+<option value="MCXCommodity">Commodity</option>
+<option value="NcdexAgri">Ncdex Agri</option>
+</select></div>
+
+<div  ng-repeat="x in Tracksheets">
+<div  class="Tracksheets">
+<div class="col-xs-5">
+<div class="Scrip">{{x.Scrip}}</div>
+<div class="Date">{{x.LastUpdated*1000|date:'d/M/y'}}</div>
+</div>
+<div class="col-xs-3">
+<div class="At"><b>Level:</b><br>{{x.At}}</div>
+</div>
+<div class="col-xs-4">
+<div class="Profit"><b>Profit:</b> {{x.Profit}}</div>
+<div class="Profit"><b>Action:</b> {{x.Action}}</div>
+</div>
+<div class="clearfix"></div>
+</div>
+
+</div>
+</div>

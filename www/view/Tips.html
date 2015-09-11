@@ -1,0 +1,15 @@
+<div class="PageHeading">Live Calls</div>
+<div ng-controller="TipsController"> 
+<div  ng-repeat="x in Tips">
+<div  class="Tips">
+<div class="col-xs-12">
+<div class="PackageName">{{x.PackageName}}</div>
+<div class="Date">{{x.LastUpdated*1000|date:'d/M/y h:m:s a'}}</div>
+<div class="Message">{{x.Message}}</div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+
+</div>
+</div>
