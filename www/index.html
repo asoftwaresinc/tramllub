@@ -1,34 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <title>Apna MP</title>
-    <style type="text/css">html,body {margin:0; padding:0;}</style>
+<!doctype html>
+<html ng-app="AnemaSoftwaresInc">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>BullMart Research </title>
+<link rel="stylesheet" href="css.css">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<script src="ng.js"></script>
+<script src="ngrt.js"></script>
+<script src="app.js"></script>
+<script src="sanitize.js"></script>
+<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+</head>
+<body  ng-controller="MainController">
+<div class="header">BullMart
+<div class="menu"><a href="#/"><i class="fa fa-bars "></a></i>
+<!-- 
+<div class="dropdown">
+<a href="">Contact</a>
+</div>
+-->
+</div> 
+</div>
 
-    </head>
-    <body>
-<div style="width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    height: 100%;background:#ccc;"></div>
-            <div id="deviceready">
-              
-<iframe class="event received" src="http://cdn.anemaindia.com/apps/apnamp" 
-style="width: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    height: 100%;"></iframe>
-
-            </div>
-    </body>
-
+<div class="ngview" ng-view></div>
+</body>
 </html>
